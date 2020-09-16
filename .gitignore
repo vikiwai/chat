@@ -1,7 +1,7 @@
 ## gitignore
 
-xcuserdata/
+Chat/xcuserdata/
 *.xcscmblueprint
 *.xccheckout
-build/
-DerivedData/
+Chat/build/
+Chat/DerivedData/
