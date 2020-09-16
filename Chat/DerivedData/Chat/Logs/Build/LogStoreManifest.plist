@@ -74,6 +74,40 @@
 			<key>uniqueIdentifier</key>
 			<string>18BA2E39-291E-4B05-8E57-1353E7C917B8</string>
 		</dict>
+		<key>24CCA24C-6DA3-4CB1-B475-FDBD7CAF7F5A</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>24CCA24C-6DA3-4CB1-B475-FDBD7CAF7F5A.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>E</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Chat project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Chat</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Chat</string>
+			<key>timeStartedRecording</key>
+			<real>621981808.22524095</real>
+			<key>timeStoppedRecording</key>
+			<real>621981809.37037504</real>
+			<key>title</key>
+			<string>Build Chat</string>
+			<key>uniqueIdentifier</key>
+			<string>24CCA24C-6DA3-4CB1-B475-FDBD7CAF7F5A</string>
+		</dict>
 		<key>3799E843-B8EA-4543-862A-B2E826600967</key>
 		<dict>
 			<key>className</key>
@@ -346,6 +380,40 @@
 			<key>uniqueIdentifier</key>
 			<string>91B04E5B-E93F-46D7-A398-8907F1F2FC2E</string>
 		</dict>
+		<key>9E35271D-C09D-48A2-AB35-D8043DDF86F2</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9E35271D-C09D-48A2-AB35-D8043DDF86F2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Chat project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Chat</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Chat</string>
+			<key>timeStartedRecording</key>
+			<real>621981855.48167205</real>
+			<key>timeStoppedRecording</key>
+			<real>621981855.52796698</real>
+			<key>title</key>
+			<string>Build Chat</string>
+			<key>uniqueIdentifier</key>
+			<string>9E35271D-C09D-48A2-AB35-D8043DDF86F2</string>
+		</dict>
 		<key>A326D5BB-67E1-4E03-8F35-BE4810544EE6</key>
 		<dict>
 			<key>className</key>
@@ -448,6 +516,40 @@
 			<key>uniqueIdentifier</key>
 			<string>B5016AA1-30D2-4334-9F98-CE8C7C1C95C4</string>
 		</dict>
+		<key>C0EECE93-2EC0-4310-AAED-3D3661F4788C</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>C0EECE93-2EC0-4310-AAED-3D3661F4788C.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Chat project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Chat</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build Chat</string>
+			<key>timeStartedRecording</key>
+			<real>621981844.34948897</real>
+			<key>timeStoppedRecording</key>
+			<real>621981847.56730902</real>
+			<key>title</key>
+			<string>Build Chat</string>
+			<key>uniqueIdentifier</key>
+			<string>C0EECE93-2EC0-4310-AAED-3D3661F4788C</string>
+		</dict>
 		<key>C9EFB27F-893D-4DBC-8055-D36516AC79D8</key>
 		<dict>
 			<key>className</key>
@@ -549,6 +651,40 @@
 			<string>Build Chat</string>
 			<key>uniqueIdentifier</key>
 			<string>EA9F1A3B-3296-437C-B936-458CC5F75CA2</string>
+		</dict>
+		<key>F549B414-4863-4CCF-A287-2A0208FF6877</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>F549B414-4863-4CCF-A287-2A0208FF6877.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Chat project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Chat</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Clean Chat</string>
+			<key>timeStartedRecording</key>
+			<real>621981838.252303</real>
+			<key>timeStoppedRecording</key>
+			<real>621981838.31937802</real>
+			<key>title</key>
+			<string>Clean Chat</string>
+			<key>uniqueIdentifier</key>
+			<string>F549B414-4863-4CCF-A287-2A0208FF6877</string>
 		</dict>
 	</dict>
 </dict>

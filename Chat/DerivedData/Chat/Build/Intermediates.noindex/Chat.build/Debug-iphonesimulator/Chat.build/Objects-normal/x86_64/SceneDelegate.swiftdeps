@@ -6,7 +6,6 @@ provides-nominal:
 provides-member:
 - ["4Chat13SceneDelegateC", ""]
 provides-dynamic-lookup:
-- "logger"
 - "scene"
 - "sceneDidBecomeActive"
 - "sceneDidDisconnect"
@@ -15,9 +14,8 @@ provides-dynamic-lookup:
 - "sceneWillResignActive"
 - "window"
 depends-top-level:
-- "BooleanLiteralType"
+- !private "AppDelegate"
 - "CastingPrecedence"
-- "Logger"
 - "SceneDelegate"
 - !private "States"
 - !private "StringLiteralType"
@@ -28,8 +26,9 @@ depends-top-level:
 - !private "UIWindowScene"
 - "UIWindowSceneDelegate"
 depends-member:
+- !private ["4Chat11AppDelegateC", "logger"]
+- !private ["s7CVarArgP", "AppDelegate"]
 - ["s7CVarArgP", "ConnectionOptions"]
-- ["s7CVarArgP", "Logger"]
 - !private ["s7CVarArgP", "States"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "logger"]
@@ -43,8 +42,8 @@ depends-member:
 - ["s7CVarArgP", "stateRestorationActivityForScene"]
 - ["s7CVarArgP", "window"]
 - ["s7CVarArgP", "windowScene"]
+- !private ["s28CustomDebugStringConvertibleP", "AppDelegate"]
 - ["s28CustomDebugStringConvertibleP", "ConnectionOptions"]
-- ["s28CustomDebugStringConvertibleP", "Logger"]
 - !private ["s28CustomDebugStringConvertibleP", "States"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "logger"]
@@ -58,8 +57,8 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "stateRestorationActivityForScene"]
 - ["s28CustomDebugStringConvertibleP", "window"]
 - ["s28CustomDebugStringConvertibleP", "windowScene"]
+- !private ["s23CustomStringConvertibleP", "AppDelegate"]
 - ["s23CustomStringConvertibleP", "ConnectionOptions"]
-- ["s23CustomStringConvertibleP", "Logger"]
 - !private ["s23CustomStringConvertibleP", "States"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "logger"]
@@ -73,8 +72,8 @@ depends-member:
 - ["s23CustomStringConvertibleP", "stateRestorationActivityForScene"]
 - ["s23CustomStringConvertibleP", "window"]
 - ["s23CustomStringConvertibleP", "windowScene"]
+- !private ["SQ", "AppDelegate"]
 - ["SQ", "ConnectionOptions"]
-- ["SQ", "Logger"]
 - !private ["SQ", "States"]
 - ["SQ", ""]
 - !private ["SQ", "active"]
@@ -91,8 +90,8 @@ depends-member:
 - ["SQ", "stateRestorationActivityForScene"]
 - ["SQ", "window"]
 - ["SQ", "windowScene"]
+- !private ["SH", "AppDelegate"]
 - ["SH", "ConnectionOptions"]
-- ["SH", "Logger"]
 - !private ["SH", "States"]
 - ["SH", ""]
 - !private ["SH", "active"]
@@ -109,17 +108,16 @@ depends-member:
 - ["SH", "stateRestorationActivityForScene"]
 - ["SH", "window"]
 - ["SH", "windowScene"]
-- ["4Chat6LoggerC", "init"]
 - !private ["4Chat6LoggerC", "logLifecycle"]
+- !private ["So8NSObjectC", "AppDelegate"]
 - ["So8NSObjectC", "ConnectionOptions"]
-- ["So8NSObjectC", "Logger"]
 - !private ["So8NSObjectC", "States"]
 - ["So8NSObjectC", "UIScene"]
 - ["So8NSObjectC", "UISceneSession"]
 - ["So8NSObjectC", "UIWindow"]
 - !private ["So8NSObjectC", "UIWindowScene"]
 - ["So8NSObjectC", "init"]
-- ["So8NSObjectC", "logger"]
+- !private ["So8NSObjectC", "logger"]
 - ["So8NSObjectC", "scene"]
 - ["So8NSObjectC", "sceneDidBecomeActive"]
 - ["So8NSObjectC", "sceneDidDisconnect"]
@@ -130,8 +128,8 @@ depends-member:
 - ["So8NSObjectC", "stateRestorationActivityForScene"]
 - ["So8NSObjectC", "window"]
 - ["So8NSObjectC", "windowScene"]
+- !private ["So8NSObjectP", "AppDelegate"]
 - ["So8NSObjectP", "ConnectionOptions"]
-- ["So8NSObjectP", "Logger"]
 - !private ["So8NSObjectP", "States"]
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "logger"]
@@ -148,7 +146,7 @@ depends-member:
 - !private ["SY", "active"]
 - !private ["SY", "background"]
 - !private ["SY", "inactive"]
-- ["4Chat13SceneDelegateC", "Logger"]
+- !private ["4Chat13SceneDelegateC", "AppDelegate"]
 - !private ["4Chat13SceneDelegateC", "States"]
 - ["4Chat13SceneDelegateC", "UIScene"]
 - ["4Chat13SceneDelegateC", "UISceneSession"]
@@ -156,7 +154,6 @@ depends-member:
 - !private ["4Chat13SceneDelegateC", "UIWindowScene"]
 - ["4Chat13SceneDelegateC", "deinit"]
 - ["4Chat13SceneDelegateC", "init"]
-- !private ["4Chat13SceneDelegateC", "logger"]
 - ["4Chat13SceneDelegateC", "scene"]
 - ["4Chat13SceneDelegateC", "sceneDidBecomeActive"]
 - ["4Chat13SceneDelegateC", "sceneDidDisconnect"]
@@ -170,8 +167,9 @@ depends-member:
 - !private ["4Chat6StatesO", "active"]
 - !private ["4Chat6StatesO", "background"]
 - !private ["4Chat6StatesO", "inactive"]
+- !private ["So21UIApplicationDelegateP", "logger"]
+- !private ["So30UIPasteConfigurationSupportingP", "AppDelegate"]
 - ["So30UIPasteConfigurationSupportingP", "ConnectionOptions"]
-- ["So30UIPasteConfigurationSupportingP", "Logger"]
 - !private ["So30UIPasteConfigurationSupportingP", "States"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "logger"]
@@ -185,8 +183,8 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "stateRestorationActivityForScene"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So30UIPasteConfigurationSupportingP", "windowScene"]
+- !private ["So11UIResponderC", "AppDelegate"]
 - ["So11UIResponderC", "ConnectionOptions"]
-- ["So11UIResponderC", "Logger"]
 - !private ["So11UIResponderC", "States"]
 - ["So11UIResponderC", "UIScene"]
 - ["So11UIResponderC", "UISceneSession"]
@@ -194,7 +192,7 @@ depends-member:
 - !private ["So11UIResponderC", "UIWindowScene"]
 - ["So11UIResponderC", ""]
 - ["So11UIResponderC", "init"]
-- ["So11UIResponderC", "logger"]
+- !private ["So11UIResponderC", "logger"]
 - ["So11UIResponderC", "scene"]
 - ["So11UIResponderC", "sceneDidBecomeActive"]
 - ["So11UIResponderC", "sceneDidDisconnect"]
@@ -205,8 +203,8 @@ depends-member:
 - ["So11UIResponderC", "stateRestorationActivityForScene"]
 - ["So11UIResponderC", "window"]
 - ["So11UIResponderC", "windowScene"]
+- !private ["So30UIResponderStandardEditActionsP", "AppDelegate"]
 - ["So30UIResponderStandardEditActionsP", "ConnectionOptions"]
-- ["So30UIResponderStandardEditActionsP", "Logger"]
 - !private ["So30UIResponderStandardEditActionsP", "States"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "logger"]
@@ -221,10 +219,9 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "window"]
 - ["So30UIResponderStandardEditActionsP", "windowScene"]
 - ["So7UISceneC", "ConnectionOptions"]
-- ["So15UISceneDelegateP", "Logger"]
+- !private ["So15UISceneDelegateP", "AppDelegate"]
 - !private ["So15UISceneDelegateP", "States"]
 - ["So15UISceneDelegateP", ""]
-- !private ["So15UISceneDelegateP", "logger"]
 - ["So15UISceneDelegateP", "scene"]
 - ["So15UISceneDelegateP", "sceneDidBecomeActive"]
 - ["So15UISceneDelegateP", "sceneDidDisconnect"]
@@ -235,8 +232,8 @@ depends-member:
 - ["So15UISceneDelegateP", "stateRestorationActivityForScene"]
 - ["So15UISceneDelegateP", "window"]
 - ["So15UISceneDelegateP", "windowScene"]
+- !private ["So23UIUserActivityRestoringP", "AppDelegate"]
 - ["So23UIUserActivityRestoringP", "ConnectionOptions"]
-- ["So23UIUserActivityRestoringP", "Logger"]
 - !private ["So23UIUserActivityRestoringP", "States"]
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "logger"]
@@ -250,10 +247,9 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "stateRestorationActivityForScene"]
 - ["So23UIUserActivityRestoringP", "window"]
 - ["So23UIUserActivityRestoringP", "windowScene"]
-- ["So21UIWindowSceneDelegateP", "Logger"]
+- !private ["So21UIWindowSceneDelegateP", "AppDelegate"]
 - !private ["So21UIWindowSceneDelegateP", "States"]
 - ["So21UIWindowSceneDelegateP", ""]
-- !private ["So21UIWindowSceneDelegateP", "logger"]
 - ["So21UIWindowSceneDelegateP", "scene"]
 - ["So21UIWindowSceneDelegateP", "sceneDidBecomeActive"]
 - ["So21UIWindowSceneDelegateP", "sceneDidDisconnect"]
@@ -264,8 +260,8 @@ depends-member:
 - ["So21UIWindowSceneDelegateP", "stateRestorationActivityForScene"]
 - ["So21UIWindowSceneDelegateP", "window"]
 - ["So21UIWindowSceneDelegateP", "windowScene"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AppDelegate"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ConnectionOptions"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "Logger"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "States"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "logger"]
@@ -279,8 +275,8 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "stateRestorationActivityForScene"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "windowScene"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AppDelegate"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ConnectionOptions"]
-- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Logger"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "States"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "logger"]
@@ -295,17 +291,19 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "window"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "windowScene"]
 depends-nominal:
+- !private "4Chat11AppDelegateC"
 - "s7CVarArgP"
 - "s28CustomDebugStringConvertibleP"
 - "s23CustomStringConvertibleP"
 - "SQ"
 - "SH"
-- "4Chat6LoggerC"
+- !private "4Chat6LoggerC"
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "SY"
 - "4Chat13SceneDelegateC"
 - !private "4Chat6StatesO"
+- !private "So21UIApplicationDelegateP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -343,4 +341,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.7.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.7.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "dcbb3400b240051745e291020ccfaadb"
+interface-hash: "63fa159bf386de4a9924fea3efb57ad1"

@@ -176,6 +176,40 @@
 			<key>uniqueIdentifier</key>
 			<string>7558D5AF-183E-40F4-9817-3B5D4B6A3ABE</string>
 		</dict>
+		<key>9ECDDE96-5330-46FC-9C0A-676D537CC458</key>
+		<dict>
+			<key>className</key>
+			<string>DBGConsoleLog</string>
+			<key>documentTypeString</key>
+			<string>com.apple.dt.IDE.DebuggerLogContentType</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.DebugLog</string>
+			<key>fileName</key>
+			<string>9ECDDE96-5330-46FC-9C0A-676D537CC458.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Chat project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Chat</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Run Chat</string>
+			<key>timeStartedRecording</key>
+			<real>621981855.53166497</real>
+			<key>timeStoppedRecording</key>
+			<real>621981880.28716195</real>
+			<key>title</key>
+			<string>Run Chat</string>
+			<key>uniqueIdentifier</key>
+			<string>9ECDDE96-5330-46FC-9C0A-676D537CC458</string>
+		</dict>
 		<key>DC785C72-3D35-44D9-A145-3C0C295D6D31</key>
 		<dict>
 			<key>className</key>

@@ -13,9 +13,13 @@ provides-member:
 - ["4Chat6StatesO", ""]
 provides-dynamic-lookup:
 - "application"
+- "applicationDidBecomeActive"
+- "applicationDidEnterBackground"
+- "applicationWillResignActive"
 - "isPrintEnabled"
 - "logLifecycle"
 - "logToConsole"
+- "logViewLifecycle"
 - "logger"
 depends-top-level:
 - "=="
@@ -40,6 +44,7 @@ depends-top-level:
 - !private "print"
 - !private "~="
 depends-member:
+- !private ["4Chat11AppDelegateC", "AppDelegate"]
 - ["4Chat11AppDelegateC", "Bool"]
 - ["4Chat11AppDelegateC", "Logger"]
 - ["4Chat11AppDelegateC", "Set"]
@@ -62,8 +67,9 @@ depends-member:
 - ["4Chat11AppDelegateC", "applicationWillTerminate"]
 - ["4Chat11AppDelegateC", "deinit"]
 - ["4Chat11AppDelegateC", "init"]
-- !private ["4Chat11AppDelegateC", "logger"]
+- ["4Chat11AppDelegateC", "logger"]
 - ["4Chat11AppDelegateC", "window"]
+- !private ["s7CVarArgP", "AppDelegate"]
 - ["s7CVarArgP", "ConnectionOptions"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
 - ["s7CVarArgP", "Logger"]
@@ -86,6 +92,7 @@ depends-member:
 - !private ["s7CVarArgP", "logger"]
 - !private ["s7CVarArgP", "role"]
 - ["s7CVarArgP", "window"]
+- !private ["s28CustomDebugStringConvertibleP", "AppDelegate"]
 - ["s28CustomDebugStringConvertibleP", "ConnectionOptions"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
 - ["s28CustomDebugStringConvertibleP", "Logger"]
@@ -108,6 +115,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "logger"]
 - !private ["s28CustomDebugStringConvertibleP", "role"]
 - ["s28CustomDebugStringConvertibleP", "window"]
+- !private ["s23CustomStringConvertibleP", "AppDelegate"]
 - ["s23CustomStringConvertibleP", "ConnectionOptions"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
 - ["s23CustomStringConvertibleP", "Logger"]
@@ -135,6 +143,7 @@ depends-member:
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
 - ["SQ", "=="]
+- !private ["SQ", "AppDelegate"]
 - ["SQ", "ConnectionOptions"]
 - ["SQ", "LaunchOptionsKey"]
 - ["SQ", "Logger"]
@@ -158,6 +167,7 @@ depends-member:
 - ["SQ", "applicationWillEnterForeground"]
 - ["SQ", "applicationWillResignActive"]
 - ["SQ", "applicationWillTerminate"]
+- !private ["SQ", "background"]
 - ["SQ", "hash"]
 - ["SQ", "hashValue"]
 - !private ["SQ", "inactive"]
@@ -168,6 +178,7 @@ depends-member:
 - !private ["SQ", "role"]
 - ["SQ", "window"]
 - ["SH", "=="]
+- !private ["SH", "AppDelegate"]
 - ["SH", "ConnectionOptions"]
 - ["SH", "LaunchOptionsKey"]
 - ["SH", "Logger"]
@@ -191,6 +202,7 @@ depends-member:
 - ["SH", "applicationWillEnterForeground"]
 - ["SH", "applicationWillResignActive"]
 - ["SH", "applicationWillTerminate"]
+- !private ["SH", "background"]
 - ["SH", "hash"]
 - ["SH", "hashValue"]
 - !private ["SH", "inactive"]
@@ -208,10 +220,12 @@ depends-member:
 - !private ["4Chat6LoggerC", "isPrintEnabled"]
 - ["4Chat6LoggerC", "logLifecycle"]
 - ["4Chat6LoggerC", "logToConsole"]
+- ["4Chat6LoggerC", "logViewLifecycle"]
 - !private ["4Chat6LoggerC", "print"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "role"]
 - !private ["So9NSCopyingP", "init"]
+- !private ["So8NSObjectC", "AppDelegate"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "ConnectionOptions"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
@@ -238,6 +252,7 @@ depends-member:
 - ["So8NSObjectC", "logger"]
 - !private ["So8NSObjectC", "role"]
 - ["So8NSObjectC", "window"]
+- !private ["So8NSObjectP", "AppDelegate"]
 - ["So8NSObjectP", "ConnectionOptions"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
 - ["So8NSObjectP", "Logger"]
@@ -269,6 +284,7 @@ depends-member:
 - !private ["SY", "_findStringSwitchCase"]
 - ["SY", "_rawHashValue"]
 - !private ["SY", "active"]
+- !private ["SY", "background"]
 - ["SY", "hash"]
 - ["SY", "hashValue"]
 - !private ["SY", "inactive"]
@@ -295,6 +311,7 @@ depends-member:
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
 - ["So13UIApplicationC", "LaunchOptionsKey"]
+- !private ["So21UIApplicationDelegateP", "AppDelegate"]
 - ["So21UIApplicationDelegateP", "Logger"]
 - !private ["So21UIApplicationDelegateP", "States"]
 - !private ["So21UIApplicationDelegateP", "UISceneConfiguration"]
@@ -313,6 +330,7 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
 - !private ["So21UIApplicationDelegateP", "logger"]
 - ["So21UIApplicationDelegateP", "window"]
+- !private ["So30UIPasteConfigurationSupportingP", "AppDelegate"]
 - ["So30UIPasteConfigurationSupportingP", "ConnectionOptions"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
 - ["So30UIPasteConfigurationSupportingP", "Logger"]
@@ -333,6 +351,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
 - !private ["So30UIPasteConfigurationSupportingP", "logger"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
+- !private ["So11UIResponderC", "AppDelegate"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "ConnectionOptions"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
@@ -359,6 +378,7 @@ depends-member:
 - ["So11UIResponderC", "init"]
 - ["So11UIResponderC", "logger"]
 - ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "AppDelegate"]
 - ["So30UIResponderStandardEditActionsP", "ConnectionOptions"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
 - ["So30UIResponderStandardEditActionsP", "Logger"]
@@ -382,6 +402,7 @@ depends-member:
 - ["So7UISceneC", "ConnectionOptions"]
 - !private ["So20UISceneConfigurationC", "init"]
 - !private ["So14UISceneSessionC", "role"]
+- !private ["So23UIUserActivityRestoringP", "AppDelegate"]
 - ["So23UIUserActivityRestoringP", "ConnectionOptions"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
 - ["So23UIUserActivityRestoringP", "Logger"]
@@ -402,6 +423,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "applicationWillTerminate"]
 - !private ["So23UIUserActivityRestoringP", "logger"]
 - ["So23UIUserActivityRestoringP", "window"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AppDelegate"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "ConnectionOptions"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Logger"]
@@ -424,6 +446,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "logger"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "role"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AppDelegate"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ConnectionOptions"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "LaunchOptionsKey"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Logger"]
@@ -503,4 +526,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.7.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.7.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.7.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "bd0acd175587313db7546b4ba511afbe"
+interface-hash: "c8d42eb6d52ce9ea86a45f1785a848b8"

@@ -11,11 +11,11 @@ import UIKit
 @available(iOS 13.0, *)
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    private let logger: Logger = Logger(true);
+    public static let logger: Logger = Logger(true);
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        self.logger.logLifecycle(stateFrom: States.inactive,
+        AppDelegate.logger.logLifecycle(stateFrom: States.inactive,
                      stateTo: States.active,
                      functionName: #function)
         return true
@@ -23,12 +23,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        self.logger.logLifecycle(stateFrom: States.notRunning,
+        AppDelegate.logger.logLifecycle(stateFrom: States.notRunning,
                      stateTo: States.inactive,
                      functionName: #function)
         return true
     }
 
+    
+    func applicationDidBecomeActive(_ application: UIApplication){
+        AppDelegate.logger.logLifecycle(stateFrom: States.inactive,
+                     stateTo: States.active,
+                     functionName: #function)
+    }
+    
+    func applicationWillResignActive(_ application: UIApplication){
+        AppDelegate.logger.logLifecycle(stateFrom: States.active,
+                     stateTo: States.inactive,
+                     functionName: #function)
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication){
+        AppDelegate.logger.logLifecycle(stateFrom: States.inactive,
+                     stateTo: States.background,
+                     functionName: #function)
+    }
     
     // MARK: UISceneSession Lifecycle
 
@@ -63,6 +81,9 @@ class Logger{
                               stateTo: States,
                               functionName: String) -> () {
         logToConsole("Application moved from \(stateFrom) state to \(stateTo): \(functionName)")
+    }
+    public func logViewLifecycle(functionName: String){
+        logToConsole(functionName)
     }
 }
 
