@@ -1,0 +1,7 @@
+## gitignore
+
+xcuserdata/
+*.xcscmblueprint
+*.xccheckout
+build/
+DerivedData/
