@@ -209,9 +209,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @class UISceneConnectionOptions;
 @class UISceneConfiguration;
 
-SWIFT_CLASS("_TtC4Chat11AppDelegate")
+SWIFT_CLASS("_TtC4Chat11AppDelegate") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 - (BOOL)application:(UIApplication * _Nonnull)application didFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)application:(UIApplication * _Nonnull)application willFinishLaunchingWithOptions:(NSDictionary<UIApplicationLaunchOptionsKey, id> * _Nullable)launchOptions SWIFT_WARN_UNUSED_RESULT;
 - (UISceneConfiguration * _Nonnull)application:(UIApplication * _Nonnull)application configurationForConnectingSceneSession:(UISceneSession * _Nonnull)connectingSceneSession options:(UISceneConnectionOptions * _Nonnull)options SWIFT_WARN_UNUSED_RESULT;
 - (void)application:(UIApplication * _Nonnull)application didDiscardSceneSessions:(NSSet<UISceneSession *> * _Nonnull)sceneSessions;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
@@ -220,7 +221,7 @@ SWIFT_CLASS("_TtC4Chat11AppDelegate")
 @class UIWindow;
 @class UIScene;
 
-SWIFT_CLASS("_TtC4Chat13SceneDelegate")
+SWIFT_CLASS("_TtC4Chat13SceneDelegate") SWIFT_AVAILABILITY(ios,introduced=13.0)
 @interface SceneDelegate : UIResponder <UIWindowSceneDelegate>
 @property (nonatomic, strong) UIWindow * _Nullable window;
 - (void)scene:(UIScene * _Nonnull)scene willConnectToSession:(UISceneSession * _Nonnull)session options:(UISceneConnectionOptions * _Nonnull)connectionOptions;
