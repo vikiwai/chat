@@ -14,10 +14,25 @@ protocol ConfigurableView {
     func configure(with model: ConfigurationModel)
 }
 
-class ConversationTableViewCell: UITableViewCell, ConfigurableView {
+struct ConversationCellModel {
+    let name: String
+    let message: String
+    let date: String
+    let isOnline: String
+    let hasUnreadMessages: Bool
+}
 
+class ConversationTableViewCell: UITableViewCell, ConfigurableView {
+    
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var messageLabel: UILabel!
     
+    typealias ConfigurationModel = ConversationCellModel
+    
+    func configure(with model: ConversationCellModel) {
+        nameLabel.text = model.name
+        dateLabel.text = model.date
+        messageLabel.text = model.message
+    }
 }
