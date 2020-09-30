@@ -8,7 +8,13 @@
 
 import UIKit
 
-class ConversationTableViewCell: UITableViewCell {
+protocol ConfigurableView {
+    associatedtype ConfigurationModel
+    
+    func configure(with model: ConfigurationModel)
+}
+
+class ConversationTableViewCell: UITableViewCell, ConfigurableView {
 
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!

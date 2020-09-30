@@ -10,6 +10,7 @@
 		5B1BB2CF2524EA4900C3F3BD /* ConversationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BB2CE2524EA4900C3F3BD /* ConversationsListViewController.swift */; };
 		5B1BB2D12524EA6A00C3F3BD /* ConversationsList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B1BB2D02524EA6A00C3F3BD /* ConversationsList.storyboard */; };
 		5B1BB2D32524F71B00C3F3BD /* ConversationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BB2D22524F71B00C3F3BD /* ConversationTableViewCell.swift */; };
+		5B1BB2D52524F9DF00C3F3BD /* ConversationCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1BB2D42524F9DF00C3F3BD /* ConversationCellModel.swift */; };
 		5B4853FE251B91DC004FA124 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4853FD251B91DC004FA124 /* ProfileViewController.swift */; };
 		5BC6DF8E25128E70006904D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC6DF8D25128E70006904D2 /* AppDelegate.swift */; };
 		5BC6DF9025128E70006904D2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC6DF8F25128E70006904D2 /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 		5B1BB2CE2524EA4900C3F3BD /* ConversationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsListViewController.swift; sourceTree = "<group>"; };
 		5B1BB2D02524EA6A00C3F3BD /* ConversationsList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ConversationsList.storyboard; sourceTree = "<group>"; };
 		5B1BB2D22524F71B00C3F3BD /* ConversationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationTableViewCell.swift; sourceTree = "<group>"; };
+		5B1BB2D42524F9DF00C3F3BD /* ConversationCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCellModel.swift; sourceTree = "<group>"; };
 		5B4853FD251B91DC004FA124 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		5BC6DF8A25128E70006904D2 /* Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BC6DF8D25128E70006904D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				5B1BB2CE2524EA4900C3F3BD /* ConversationsListViewController.swift */,
 				5B1BB2D02524EA6A00C3F3BD /* ConversationsList.storyboard */,
 				5B1BB2D22524F71B00C3F3BD /* ConversationTableViewCell.swift */,
+				5B1BB2D42524F9DF00C3F3BD /* ConversationCellModel.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 			files = (
 				5BC6DF9225128E70006904D2 /* ViewController.swift in Sources */,
 				5B1BB2CF2524EA4900C3F3BD /* ConversationsListViewController.swift in Sources */,
+				5B1BB2D52524F9DF00C3F3BD /* ConversationCellModel.swift in Sources */,
 				5B1BB2D32524F71B00C3F3BD /* ConversationTableViewCell.swift in Sources */,
 				5BC6DF8E25128E70006904D2 /* AppDelegate.swift in Sources */,
 				5B4853FE251B91DC004FA124 /* ProfileViewController.swift in Sources */,
