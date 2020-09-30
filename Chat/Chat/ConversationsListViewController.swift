@@ -27,7 +27,11 @@ extension ConversationsListViewController: UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {        
-        return "Online"
+        if section == 0 {
+            return "Online"
+        } else {
+            return "Offline"
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -41,7 +45,7 @@ extension ConversationsListViewController: UITableViewDataSource, UITableViewDel
             fatalError("The dequeued cell is not an instance of LessonTableViewCell.")
         }
         
-        cell.configure(with: ConversationCellModel(name: "DD", message: "dd", date: true, isOnline: true, hasUnreadMessages: false))
+        cell.configure(with: ConversationCellModel(name: "Diana", message: "Hey!", date: "12.06.2020", isOnline: true, hasUnreadMessages: false))
         
         return cell
     }
