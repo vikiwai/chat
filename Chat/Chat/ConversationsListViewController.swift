@@ -20,7 +20,7 @@ class ConversationsListViewController: UIViewController {
     }
 }
 
-extension ConversationsListViewController: UITableViewDataSource {
+extension ConversationsListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         <#code#>
     }
@@ -28,10 +28,4 @@ extension ConversationsListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         <#code#>
     }
-    
-    
-}
-
-extension ConversationsListViewController: UITableViewDelegate {
-    
 }
