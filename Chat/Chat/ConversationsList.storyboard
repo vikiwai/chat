@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tincoff Chat-->
+        <!--ConversationsList-->
         <scene sceneID="oO3-2c-jCS">
             <objects>
-                <viewController id="Qvx-yE-Ket" customClass="ConversationsListViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConversationsList" title="ConversationsList" id="Qvx-yE-Ket" customClass="ConversationsListViewController" customModule="Chat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ikU-na-iRC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,30 +19,28 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QJJ-1F-16n">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="80" id="XRr-AC-wTw" customClass="ConversationTableViewCell" customModule="Chat" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConversationTableViewCell" rowHeight="80" id="XRr-AC-wTw" customClass="ConversationTableViewCell" customModule="Chat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XRr-AC-wTw" id="O1A-56-yeD">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="293" translatesAutoresizingMaskIntoConstraints="NO" id="VO6-Qb-9rJ">
-                                                    <rect key="frame" x="20" y="11" width="374" height="20.5"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPU-Q3-hnU">
-                                                            <rect key="frame" x="0.0" y="0.0" width="45" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfO-L6-s0b">
-                                                            <rect key="frame" x="338" y="0.0" width="36" height="20.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPU-Q3-hnU">
+                                                    <rect key="frame" x="20" y="11" width="231" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="right" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RfO-L6-s0b">
+                                                    <rect key="frame" x="259" y="11" width="135" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="135" id="Ew4-Pm-YCi"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L3C-36-eby">
                                                     <rect key="frame" x="20" y="48.5" width="374" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -51,11 +49,14 @@
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="RfO-L6-s0b" firstAttribute="trailing" secondItem="O1A-56-yeD" secondAttribute="trailingMargin" id="8Ts-7K-wr6"/>
+                                                <constraint firstItem="RfO-L6-s0b" firstAttribute="leading" secondItem="fPU-Q3-hnU" secondAttribute="trailing" constant="8" id="Rh0-D1-KI4"/>
+                                                <constraint firstItem="fPU-Q3-hnU" firstAttribute="leading" secondItem="O1A-56-yeD" secondAttribute="leadingMargin" id="Ui9-xi-bl4"/>
+                                                <constraint firstItem="RfO-L6-s0b" firstAttribute="trailing" secondItem="L3C-36-eby" secondAttribute="trailing" id="UqW-Ag-ehX"/>
                                                 <constraint firstItem="L3C-36-eby" firstAttribute="bottom" secondItem="O1A-56-yeD" secondAttribute="bottomMargin" id="VgH-Et-NJd"/>
-                                                <constraint firstItem="VO6-Qb-9rJ" firstAttribute="top" secondItem="O1A-56-yeD" secondAttribute="topMargin" id="Y4p-Si-5hh"/>
-                                                <constraint firstItem="VO6-Qb-9rJ" firstAttribute="leading" secondItem="O1A-56-yeD" secondAttribute="leadingMargin" id="cEs-Df-10d"/>
-                                                <constraint firstItem="VO6-Qb-9rJ" firstAttribute="trailing" secondItem="L3C-36-eby" secondAttribute="trailing" id="eih-Au-ZPN"/>
-                                                <constraint firstItem="VO6-Qb-9rJ" firstAttribute="leading" secondItem="L3C-36-eby" secondAttribute="leading" id="j1D-nT-DnL"/>
+                                                <constraint firstItem="fPU-Q3-hnU" firstAttribute="top" secondItem="O1A-56-yeD" secondAttribute="topMargin" id="r1X-ab-oqi"/>
+                                                <constraint firstItem="fPU-Q3-hnU" firstAttribute="baseline" secondItem="RfO-L6-s0b" secondAttribute="baseline" id="rQC-Rl-dI6"/>
+                                                <constraint firstItem="fPU-Q3-hnU" firstAttribute="leading" secondItem="L3C-36-eby" secondAttribute="leading" id="rnr-Ky-X3o"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -85,10 +86,10 @@
             </objects>
             <point key="canvasLocation" x="897.10144927536237" y="-142.63392857142856"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--NavigationControllerConversationsList-->
         <scene sceneID="1KE-kk-rFA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Lkd-9Z-Nlq" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavigationControllerConversationsList" title="NavigationControllerConversationsList" automaticallyAdjustsScrollViewInsets="NO" id="Lkd-9Z-Nlq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="lrc-k3-Asw">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

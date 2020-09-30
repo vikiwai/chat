@@ -68,12 +68,12 @@
 				5BC6DF8F25128E70006904D2 /* SceneDelegate.swift */,
 				5BC6DF9125128E70006904D2 /* ViewController.swift */,
 				5BC6DF9325128E70006904D2 /* Main.storyboard */,
+				5B1BB2D02524EA6A00C3F3BD /* ConversationsList.storyboard */,
 				5BC6DF9625128E72006904D2 /* Assets.xcassets */,
 				5BC6DF9825128E72006904D2 /* LaunchScreen.storyboard */,
 				5BC6DF9B25128E72006904D2 /* Info.plist */,
 				5B4853FD251B91DC004FA124 /* ProfileViewController.swift */,
 				5B1BB2CE2524EA4900C3F3BD /* ConversationsListViewController.swift */,
-				5B1BB2D02524EA6A00C3F3BD /* ConversationsList.storyboard */,
 				5B1BB2D22524F71B00C3F3BD /* ConversationTableViewCell.swift */,
 			);
 			path = Chat;

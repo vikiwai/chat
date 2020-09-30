@@ -17,8 +17,8 @@ protocol ConfigurableView {
 struct ConversationCellModel {
     let name: String
     let message: String
-    let date: String
-    let isOnline: String
+    let date: Bool
+    let isOnline: Bool
     let hasUnreadMessages: Bool
 }
 
@@ -32,7 +32,7 @@ class ConversationTableViewCell: UITableViewCell, ConfigurableView {
     
     func configure(with model: ConversationCellModel) {
         nameLabel.text = model.name
-        dateLabel.text = model.date
+        dateLabel.text = ""
         messageLabel.text = model.message
     }
 }

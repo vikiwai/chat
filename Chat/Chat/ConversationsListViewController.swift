@@ -21,11 +21,28 @@ class ConversationsListViewController: UIViewController {
 }
 
 extension ConversationsListViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {        
+        return "Online"
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cellIdentifier = "ConversationTableViewCell"
+              
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? ConversationTableViewCell else {
+            fatalError("The dequeued cell is not an instance of LessonTableViewCell.")
+        }
+        
+        cell.configure(with: ConversationCellModel(name: "DD", message: "dd", date: true, isOnline: true, hasUnreadMessages: false))
+        
+        return cell
     }
 }
