@@ -45,7 +45,7 @@ extension ConversationsListViewController: UITableViewDataSource, UITableViewDel
             fatalError("The dequeued cell is not an instance of LessonTableViewCell.")
         }
         
-        cell.configure(with: ConversationCellModel(name: "Diana", message: "Hey!", date: "12.06.2020", isOnline: true, hasUnreadMessages: false))
+        cell.configure(with: ConversationCellModel(name: "Diana", message: nil, date: "12.06.2020", isOnline: true, hasUnreadMessages: false))
         
         return cell
     }

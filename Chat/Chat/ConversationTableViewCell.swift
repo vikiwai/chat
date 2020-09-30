@@ -16,7 +16,7 @@ protocol ConfigurableView {
 
 struct ConversationCellModel {
     let name: String
-    let message: String
+    let message: String?
     let date: String
     let isOnline: Bool
     let hasUnreadMessages: Bool
@@ -33,6 +33,14 @@ class ConversationTableViewCell: UITableViewCell, ConfigurableView {
     func configure(with model: ConversationCellModel) {
         nameLabel.text = model.name
         dateLabel.text = model.date
-        messageLabel.text = model.message
+        
+        if let message = model.message {
+            messageLabel.font = .systemFont(ofSize: 16)
+            messageLabel.text = message
+        } else {
+            messageLabel.font = .italicSystemFont(ofSize: 16)
+            messageLabel.text = "No messages yet"
+        }
+        
     }
 }
