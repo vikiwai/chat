@@ -30,7 +30,7 @@ extension ConversationsListViewController: UITableViewDataSource, UITableViewDel
         if section == 0 {
             return "Online"
         } else {
-            return "Offline"
+            return "History"
         }
     }
     
